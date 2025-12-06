@@ -1,0 +1,102 @@
+body {
+  padding-bottom: 60px;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: #11cc95;
+  border-radius: 4px;
+}
+
+.navbar-brand img {
+  width: 113px;
+  height: 54px;
+}
+
+.custom-menu {
+  background: rgba(212, 255, 234, 0.5);
+  width: 496;
+  height: 62;
+  opacity: 1;
+  top: 43px;
+  left: 712px;
+  border-radius: 16px;
+  border-bottom-width: 0.5px;
+}
+
+.nav-link.active-menu {
+  color: #007bff !important;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-link.active-menu::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #007bff;
+  left: 0;
+  bottom: -3px;
+}
+
+button.btn.px-3.logout-btn {
+  background: rgba(212, 255, 234, 0.66);
+  border-radius: 16px;
+}
+
+/* Footer part */
+.app-footer {
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+}
+
+/* Ticket Page  */
+.ticket-container {
+  background: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #dee2e6;
+}
+
+.search-input {
+  max-width: 250px;
+}
+
+.custom-table thead {
+  background-color: #e5f9ed; /* light mint green */
+}
+
+.custom-table th {
+  font-weight: 600;
+  color: #555;
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* light gray row */
+}
+
+/* Status styles */
+.status-open {
+  background: #e2e8ff;
+  color: #3e57d0;
+}
+
+.status-resolve {
+  background: #ccffe5;
+  color: #0ea86b;
+}
+
+.status-progress {
+  background: #ffd9a6;
+  color: #cc7a00;
+}
+
+.badge {
+  padding: 8px 12px;
+  font-size: 0.75rem;
+}
