@@ -40,7 +40,7 @@ const Header = () => {
           </li>
 
           <li className="nav-item position-relative">
-            <a className="nav-link active" href="/my-ticket">
+            <a className="nav-link active" href="/ticketPage">
               My Ticket
             </a>
             <span className="underline"></span>
