@@ -2,21 +2,16 @@ body {
   padding-bottom: 60px;
 }
 
-.underline {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 100%;
-  background: #11cc95;
-  border-radius: 4px;
-}
+/* Header Part ===================================================
+==================================================================*/
 
+/* Logo */
 .navbar-brand img {
   width: 113px;
   height: 54px;
 }
 
+/* Menu */
 .custom-menu {
   background: rgba(212, 255, 234, 0.5);
   width: 496;
@@ -28,17 +23,61 @@ body {
   border-bottom-width: 0.5px;
 }
 
-button.btn.px-3.logout-btn {
+/* .underline {
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  height: 3px;
+  width: 40%;
+  background: #11cc95;
+  border-radius: 4px;
+} */
+
+/* Dynamic Active Menu */
+.nav-link.active-menu {
+  color: #000000 !important;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-link.active-menu::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 4px;
+  border-radius: 14px;
+  background: #0ea86b;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -3px;
+}
+
+/* logout button */
+/* button.btn.px-3.logout-btn {
   background: rgba(212, 255, 234, 0.66);
   border-radius: 16px;
+} */
+
+.btn.px-3.logout-btn {
+  background: rgba(212, 255, 234, 0.66);
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Roboto;
 }
+
+/* Header Part End ==============================================
+==================================================================*/
 
 /* Footer part */
 .app-footer {
   width: 100%;
-  height: 80px;
+  height: 100px;
   z-index: 1000;
 }
+
+/* Footer Part End ==============================================
+==================================================================*/
 
 /* Ticket Page  */
 .ticket-container {
