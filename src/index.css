@@ -28,6 +28,25 @@ body {
   border-bottom-width: 0.5px;
 }
 
+<<<<<<< HEAD
+=======
+.nav-link.active-menu {
+  color: black !important;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-link.active-menu::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #0ea86b;
+  left: 0;
+  bottom: -3px;
+}
+
+>>>>>>> 0f6d46c530abc9c03a5f15d3181030acc0a6ba73
 button.btn.px-3.logout-btn {
   background: rgba(212, 255, 234, 0.66);
   border-radius: 16px;
