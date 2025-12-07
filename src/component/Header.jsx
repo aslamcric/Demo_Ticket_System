@@ -34,7 +34,7 @@ const Header = () => {
           </li>
 
           <li className="nav-item">
-            <a className="nav-link" href="/open-ticket">
+            <a className="nav-link" href="/openTicket">
               Open a Ticket
             </a>
           </li>
