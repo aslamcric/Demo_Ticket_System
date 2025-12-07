@@ -66,51 +66,6 @@ body {
 /* Footer Part End ===============================================
 ==================================================================*/
 
-/* Ticket Page ===================================================*/
-.ticket-container {
-  background: #ffffff;
-  border-radius: 15px;
-  border: 1px solid #dee2e6;
-}
-
-.search-input {
-  max-width: 250px;
-}
-
-.custom-table thead {
-  background-color: #e5f9ed; /* light mint green */
-}
-
-.custom-table th {
-  font-weight: 600;
-  color: #555;
-}
-
-.custom-table tbody tr:nth-child(even) {
-  background-color: #f9f9f9; /* light gray row */
-}
-
-/* Status styles */
-.status-open {
-  background: #e2e8ff;
-  color: #3e57d0;
-}
-
-.status-resolve {
-  background: #ccffe5;
-  color: #0ea86b;
-}
-
-.status-progress {
-  background: #ffd9a6;
-  color: #cc7a00;
-}
-
-.badge {
-  padding: 8px 12px;
-  font-size: 0.75rem;
-}
-
 /* login page css =============================================*/
 
 /* Welcome EDC Text */
@@ -273,4 +228,110 @@ body {
 .full-form {
   width: 524px !important;
   margin: 0 auto;
+}
+
+/* Ticket Page Start ===================================================*/
+.ticket-container {
+  background: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #dee2e6;
+}
+
+.my-ticket {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(81, 84, 111, 1);
+}
+
+.search-input {
+  max-width: 250px;
+}
+
+.all-ticket-btn {
+  background: #e1fdf1 !important;
+  color: rgba(10, 122, 67, 1) !important;
+  border: #e1fdf1;
+  border-radius: 8px 0px 0px 8px !important;
+  font-weight: 400px !important;
+}
+
+.ticket-btn {
+  background-color: #eef0ff !important;
+  border-radius: 0px 0px 0px 0px !important;
+}
+
+.ticket-btn-last {
+  background-color: #eef0ff !important;
+  border-radius: 0px 8px 8px 0px !important;
+}
+
+.table-header th {
+  background-color: rgba(212, 255, 234, 0.5) !important;
+  color: black !important;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  border: none !important;
+}
+
+.custom-table tr {
+  height: 80px;
+  vertical-align: middle;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.custom-table tbody tr:nth-child(odd) td {
+  background-color: #f9f9ff !important;
+  border: none !important;
+}
+.custom-table tbody tr:nth-child(even) td {
+  border: none !important;
+}
+
+.custom-table {
+  border: 1px solid rgba(169, 174, 212, 1) !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+}
+
+/* Status styles =======================================*/
+.status-open {
+  background: rgba(169, 174, 212, 1);
+  color: rgba(81, 84, 111, 1) !important;
+  border: 1px solid rgba(169, 174, 212, 1);
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  line-height: 100% !important;
+}
+
+.status-resolve {
+  background: #e3fff1 !important;
+  color: #0ea86b !important;
+}
+
+.status-progress {
+  background: rgba(255, 149, 0, 0.08) !important;
+  color: rgba(255, 149, 0, 1) !important ;
+}
+
+.badge {
+  padding: 8px 12px !important;
+  font-size: 16px !important;
+  align-items: end !important;
 }

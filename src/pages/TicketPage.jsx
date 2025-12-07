@@ -64,33 +64,35 @@ const TicketPage = () => {
     <div className="ticket-container container p-4 my-4 rounded shadow-sm">
       {/* Title and Search */}
       <div className="d-flex justify-content-between align-items-center mb-3">
-        <h4 className="fw-bold">MY TICKET</h4>
+        <h4 className="my-ticket">MY TICKET</h4>
         <input
           type="text"
           className="form-control search-input"
           placeholder="Search Ticket"
         />
-      </div>
 
-      {/* Filter Buttons */}
-      <div className="mb-3 d-flex gap-2">
-        <button className="btn btn-success btn-sm px-3">All Ticket</button>
-        <button className="btn btn-outline-secondary btn-sm px-3">
-          Open Ticket
-        </button>
-        <button className="btn btn-outline-secondary btn-sm px-3">
-          In Progress
-        </button>
-        <button className="btn btn-outline-secondary btn-sm px-3">
-          Resolve
-        </button>
+        {/* Filter Buttons */}
+        <div className="mb-3 d-flex ">
+          <button className="btn btn-success btn-sm px-3 all-ticket-btn">
+            All Ticket
+          </button>
+          <button className="btn btn-outline-secondary btn-sm px-3 ticket-btn">
+            Open Ticket
+          </button>
+          <button className="btn btn-outline-secondary btn-sm px-3 ticket-btn">
+            In Progress
+          </button>
+          <button className="btn btn-outline-secondary btn-sm px-3 ticket-btn-last">
+            Resolve
+          </button>
+        </div>
       </div>
 
       {/* Table */}
       <div className="table-responsive">
-        <table className="table table-hover custom-table">
+        {/* <table className="table table-hover custom-table">
           <thead>
-            <tr>
+            <tr className="table-header">
               <th>SL</th>
               <th>Ticket No</th>
               <th>Created at</th>
@@ -110,6 +112,34 @@ const TicketPage = () => {
                   <span
                     className={`badge rounded-pill ${statusClass(t.status)}`}
                   >
+                    {t.status}
+                  </span>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table> */}
+
+        <table className="table table-hover custom-table ">
+          <thead>
+            <tr className="table-header">
+              <th>SL</th>
+              <th>Ticket No</th>
+              <th>Created at</th>
+              <th>Issue</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {tickets.map((t, index) => (
+              <tr key={t.id}>
+                <td>{index + 1}</td>
+                <td>{t.number}</td>
+                <td>{t.date}</td>
+                <td>{t.issue}</td>
+                <td>
+                  <span className={`badge  ${statusClass(t.status)}`}>
                     {t.status}
                   </span>
                 </td>
