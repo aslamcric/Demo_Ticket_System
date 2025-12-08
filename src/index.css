@@ -1,4 +1,5 @@
 body {
+  background-color: #f7f8ff !important;
   padding-bottom: 60px;
   font-family: "Roboto", sans-serif !important;
 }
@@ -334,4 +335,59 @@ body {
   padding: 8px 12px !important;
   font-size: 16px !important;
   align-items: end !important;
+}
+
+/* Ticket Page End ===================================================*/
+
+/* Home Page Start ===================================================*/
+/* .support-wrapper {
+  padding-top: 120px;
+  padding-bottom: 100px; 
+  height: calc(100vh - 220px);
+  overflow: hidden;
+  box-sizing: border-box;
+} */
+
+/* Card styling */
+/* .support-card {
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+  height: 516px !important;
+} */
+
+/* Button spacing for small screens */
+/* @media (max-width: 576px) {
+  .support-card button {
+    width: 100%;
+  }
+} */
+
+/* ============================ */
+
+.support-wrapper {
+  height: calc(100vh - 220px);
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  box-sizing: border-box;
+}
+
+/* Card styling */
+.support-card {
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+  height: auto;
+}
+
+.support-card-content {
+  padding: 230px 20px !important;
+}
+
+/* Button responsive */
+@media (max-width: 576px) {
+  .support-card button {
+    width: 100%;
+  }
 }
